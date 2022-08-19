@@ -6,9 +6,9 @@ The company Pewlett Hackard is analyzing how many employees will start to leave 
 
 ## Results
 
-* The number of employees that are near to retirement is staggering, near 40k people are next to face retirement in the company
+* The number of employees that are near to retirement is staggering, near 40k people are next to face retirement in the company.
 
-* There are only two managers that are near retirement, meaning key positions in the company are not in risk of facing an abrupt change
+* There are only two managers that are near retirement, meaning key positions in the company are not in risk of facing an abrupt change.
 
 <img width="176" alt="retiring_titles" src="https://user-images.githubusercontent.com/104656920/185514213-8f1fdd04-2f36-484f-8bcb-85a7cb9cc448.png">
 
@@ -24,10 +24,11 @@ The company Pewlett Hackard is analyzing how many employees will start to leave 
 
   * How many roles will need to be filled as the "silver tsunami" begins to make an impact?
   
-  The roles that we will need to fill are 41,380. A lot of people will be leaving and it is needed 
+   The roles that we will need to fill are 41,380. A lot of people will be leaving and it is needed to begin recruiting ASAP.
   
   * Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
-  Using the following code we were able to see that there as sufficient team members in the company to face the silver tsunami that is coming. The company has a lot of employees in each of the departments that handling the leave of many of them will for sure be a challenge but not a risk to the company.
+   Using the following code we were able to see that there as sufficient team members in the company to face the silver tsunami that is coming. The company          has a lot of employees in each of the departments that handling the leave of many of them will for sure be a challenge but not a risk to the company.
+   
 Select COUNT(e.emp_no), d.dept_name
 
 FROM employees AS e
