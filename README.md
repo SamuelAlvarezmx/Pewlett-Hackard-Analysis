@@ -24,4 +24,24 @@ The company Pewlett Hackard is analyzing how many employees will start to leave 
 
   * How many roles will need to be filled as the "silver tsunami" begins to make an impact?
   
+  The roles that we will need to fill are 41,380. A lot of people will be leaving and it is needed 
+  
   * Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
+  Using the following code we were able to see that there as sufficient team members in the company to face the silver tsunami that is coming. The company has a lot of employees in each of the departments that handling the leave of many of them will for sure be a challenge but not a risk to the company.
+Select COUNT(e.emp_no), d.dept_name
+
+FROM employees AS e
+
+INNER JOIN dept_emp AS de
+
+ON e.emp_no = de.emp_no
+
+INNER JOIN departments AS d
+
+ON de.dept_no = d.dept_no
+
+WHERE (de.to_date = '9999-01-01')
+GROUP BY d.dept_name
+ORDER BY COUNT(e.emp_no) DESC;
+
+<img width="229" alt="Total employees" src="https://user-images.githubusercontent.com/104656920/185522413-45084d51-425e-4080-b1e7-066d7b2b32ef.png">
